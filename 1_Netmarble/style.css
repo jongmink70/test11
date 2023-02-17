@@ -28,7 +28,7 @@ body{
     height: 100%;
     left: 0;
     border-right: 1px solid #EDEDF4;
-    box-shadow: 1px 0px 30px #a79f9f;
+    box-shadow: 5px 0 50px rgba(10, 7, 88, 0.13);
     z-index: 9999999;
 
 }
