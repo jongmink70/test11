@@ -1,111 +1,316 @@
- @charset "UTF-8";
+@charset "UTF-8";
 
 
- /*###############전체선택자 속성값###############*/
+/*###############전체선택자 속성값###############*/
 *{
-    margin: 0; padding: 0; box-sizing: border-box;
+   margin: 0; padding: 0; box-sizing: border-box;
 }
 
 a:link, a:visited{
-    text-decoration: none; color: black;
+   text-decoration: none; color: black;
 }
 
 li{
-    list-style: none;
+   list-style: none;
 }
 /*###############클래스 공통 속성값###############*/
-.Flex_aic{
-    display: flex;
-    align-items: center;
+.Flex{
+   display: flex;
 }
-
+.Flex_aic{
+   display: flex;
+   align-items: center;
+}
 .Flex_cc{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .FC_basicgray{
-    color: #65666E;
+   color: #65666E;
 }
 .Pointer{
-    cursor: pointer;
+   cursor: pointer;
 }
 
 /*###############탑 로고###############*/
 .logo{
-    border: 1px solid black;
-    width: 100%;
-    height: 62px;
-    justify-content: space-between;
-    padding: 23px 30px 23px 21px;
+   width: 100%;
+   min-width: 1270px;
+   height: 62px;
+   justify-content: space-between;
+   padding: 23px 30px 23px 21px;
 }
 
 .logo .left{
-    width: 65px;
-    height: 62px;
-    justify-content: space-between;
-    line-height: 62px;
+   width: 65px;
+   height: 62px;
+   justify-content: space-between;
+   line-height: 62px;
 }
 
-.logo .hamburger{
-    position: relative;
-    width: 16px;
-    height: 16px;
-}
-
+.logo .hamburger{position: relative; width: 16px; height: 16px;}
 .hamburger:before, .hamburger div, .hamburger:after{
-    position: absolute;
-    height: 2.3px;
-    width: 100%;
-    left: 0;
-    background-color: black;
-    content: "";
-    display: block;
-}
-.hamburger:before{
-    top: 0;
-}
-.hamburger div{
-    top: 50%;
-    transform: translateY(-50%);
-}
-.hamburger:after{
-    bottom: 0;
-}
+   position: absolute;
+   height: 2.3px;
+   width: 100%;
+   left: 0;
+   background-color: black;
+   content: "";
+   display: block;}
+.hamburger:before{top: 0;} .hamburger div{top: 50%; transform: translateY(-50%);} .hamburger:after{bottom: 0;}
+
 .logo .menu{
-    color: #17191d;
-    font-weight: bold;
-    padding-right: 6px;
+   color: #17191d;
+   font-weight: bold;
+   padding-right: 6px;
 }
 
-.logo .right{
-
+.logo .center{
+   padding-left: 245px;
+   padding-top: 5px;
 }
+
 .logo .cardimg, .logo .pcroomimg{
-    width: 33px;
+   width: 33px;
 }
 .right div{
-    margin-right: 10px;
+   margin-right: 10px;
 }
 .right div:nth-child(3){
-    font-size: 14px;
-    font-weight: bold;
-    color: #17191D;
-    height: 36px;
-    line-height: 36px;
-    text-align: center;
+   font-size: 14px;
+   font-weight: bold;
+   color: #17191D;
+   height: 36px;
+   line-height: 36px;
+   text-align: center;
 }
 .right div:last-child{
-    margin-right: 0;
-    font-size: 15px;
-    font-weight: bold;
-    color: #080410;
-    border-radius: 19px;
-    border: 2px solid #17191D;
-    width: 115.7px;
-    height: 36px;
-    line-height: 30px;
-    text-align: center;
+   margin-right: 0;
+   font-size: 15px;
+   font-weight: bold;
+   color: #080410;
+   border-radius: 19px;
+   border: 2px solid #17191D;
+   width: 115.7px;
+   height: 36px;
+   line-height: 30px;
+   text-align: center;
+}
+
+/*###############백그라운드이미지###############*/
+.bcgimg{    
+   width: 100%;
+   min-width: 1270px;
+   height: 3000px;
+   background: url("https://bbscdn.df.nexon.com/data6/commu/202301/110128_63bb757862899.jpg") center 0 no-repeat;
+}
+/*###############메인박스###############*/
+.mainwrap{
+   position: sticky;
+   margin:0 auto;
+   min-width: 1270px;
+   width: 1270px;
+   height: 100%;
+}
+/*###############메인박스-탑###############*/
+.topbox{
+   position: relative;
+   width: 100%;
+}
+.topbox img{position: absolute;}
+.topbox .img1{left: -20px;top: 20px;}
+.topbox .img2{left: 180px; top: 40px;}
+.topbox .img3{right: 0;}  
+
+/*###############메인박스-미드이미지###############*/
+
+.mainmenu{
+   background: url("https://cdn.df.nexon.com/img/web/main/bg_container.png?v=20160623") no-repeat;
+   width: 100%;
+   height: 100%;
+   display: flex;
+}
+
+/*###############메인박스 l,c,r 3분할###############*/
+.mainmenu .leftbox, .mainmenu .centerbox, .mainmenu .rightbox{
+   margin-top: 150px;
+}
+.mainmenu .leftbox{width: 180px;}
+.mainmenu .centerbox{width: 850px;}
+.mainmenu .rightbox{width: 240px;}
+
+/*###############메인박스 left###############*/
+
+.leftbox .leftlist{
+   padding: 15px 0;
+   border-bottom: 1px solid #4a4c5b;
+}
+
+.leftlist .leftbox_left{
+   width: 75px;
+   font-size: 12px;
+   font-weight: bold;
+   color: #d2d5e1;
+   padding: 4px 0 0 10px
+}
+.leftlist ul{
+   width: 90px;
+}
+.leftlist li{
+   font-size: 11px;
+   padding: 4px 10px 3px 0;
+   color: #a1a4af;
+   border-bottom: 1px solid #4a4c5b;
+}
+.leftlist li:last-child{
+   border-bottom: none;
+}
+.lastleftlist .a1{
+   width: 100%;
+   height: 33px;
+   line-height: 33px;
+   text-align: center;
+   font-size: 11px;
+   color: #d2d5e1;
+   border-bottom: 1px solid #4a4c5b; 
+}
+.lastleftlist .a1:first-child{
+   border-right: 1px solid #4a4c5b;
+}
+/*###############메인박스 center###############*/
+
+
+/*###############메인박스 right###############*/
+
+.rightbox .gamestart{
+   height: 175px;
+   position: relative;
+   z-index: 1000;
+   background:url("https://cdn.df.nexon.com/img/web/common/game_start_sp.jpg")
+}
+
+/* .gamestart img{
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.gamestart:hover>img{
+   animation-name: loginbtnMove;
+   animation-duration : 1s;
+}
+
+@keyframes loginbtnMove {
+   100%{top:-40px}    
+} */
+
+
+.rightbox .download{
+   background-color: #10224f;
+   border-top: #0a183a;
+   border-bottom: #0a183a;
+}
+.rightbox .a2{
+   padding: 10px 5px;
+   font-size: 11px;
+   color: #8d98ae;
+}
+.rightbox .line{
+   width: 1px;
+   height: 10px;
+   background-color:#8d98ae;
+   margin: 0 5px;
+}
+
+.rightbox .loginbox{
+   padding: 30px 20px;
+   border-bottom: 1px solid #e8e8ec;
+}
+
+
+
+.rightbox .nexon, .rightbox .df{
+   font-size: 12px;
+   font-weight: bold;
+   color: #FFFFFF;
+   padding: 15px 0;
+   text-align: center;
+}
+.rightbox .nexon{
+   background-color: #3392FF;
+   margin-bottom: 5px;
+}
+.rightbox .df{
+   background-color: #484e5f;
+   margin-bottom: 15px;
+}
+.rightbox .newuser{
+   font-size: 11px;
+   color: #989cad;
+   text-align: center;
+}
+
+.rightbox .gide{
+   border-bottom: 1px solid #e8e8ec;
+}
+
+.rightbox .a3{
+   padding: 10px 24px;
+   font-size: 11px;
+   color: #3e414f;
+   border-bottom: 1px solid #e8e8ec;
+   background-color: white;
+}
+.rightbox .a3:first-child{
+   border-bottom: 1px solid #e8e8ec;
+   border-right: 1px solid #e8e8ec
+}
+
+.rightbox .a3:first-child:hover, .rightbox .a3:nth-child(2):hover{
+   border-bottom: none;
+   font-weight: bold;
+   background-color: transparent;
+}
+
+.rightbox .posi{position: relative;}
+.rightbox .storebox, .rightbox .storebox1{
+   width: 240px;
+   padding: 20px 20px 5px 20px;
+   position: absolute;
+   top: 35px;
+}
+.rightbox .storebox{visibility: visible;}
+.rightbox .storebox1{visibility: hidden;}
+.rightbox .storeimg{
+   width: 28px;
+   height: 28px;
+   margin-right: 10px;
+}
+.rightbox .r4{
+   font-size: 12px;
+   color: #65666e;
+}
+.rightbox .r5{
+   font-size: 11px;
+   color: #989cad;
+}
+.rightbox .button{justify-content: flex-end;}
+
+.rightbox .a3:nth-child(2):hover~.storebox{
+   visibility: hidden;
+}
+.rightbox .a3:nth-child(2):hover~.storebox1{
+   visibility: visible;
+}
+
+.rightbox .coupon{
+   margin-top: 75px;
+}
+.rightbox .benefits{
+   position: relative;
+   top: -10px;
+   height: 46px;
 }
 
 
